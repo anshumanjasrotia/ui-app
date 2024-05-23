@@ -1,5 +1,10 @@
-import configJson from "./auth_config.json";
+// import configJson from "./auth_config.json";
 
+const configJson = {
+  "domain": "dev-mcdiur322yr4mpkc.us.auth0.com",
+  "clientId": "XLWyBfquhkdB9whaDWN7A4HVBv1v5Twk",
+  "audience": "basic-calculator"
+};
 export function getConfig() {
   // Configure the audience here. By default, it will take whatever is in the config
   // (specified by the `audience` key) unless it's the default value of "YOUR_API_IDENTIFIER" (which
