@@ -4,11 +4,9 @@ import Highlight from "../components/Highlight";
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import { getConfig } from "../config";
 import Loading from "../components/Loading";
-import { useHistory } from "react-router-dom";
 
 export const PaymentComponent = () => {
   const { apiOrigin = "https://basicapitest.azure-api.net/", audience } = getConfig();
-  const history = useHistory();
 
   const [state, setState] = useState({
     showResult: false,
