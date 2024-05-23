@@ -6,7 +6,7 @@ import { getConfig } from "../config";
 import Loading from "../components/Loading";
 
 export const ExternalApiComponent = () => {
-  const { apiOrigin = "http://basicapitest.azure-api.net/", audience } = getConfig();
+  const { apiOrigin = "https://basicapitest.azure-api.net/", audience } = getConfig();
 
   const [state, setState] = useState({
     showResult: false,
@@ -58,7 +58,7 @@ export const ExternalApiComponent = () => {
     try {
       const token = await getAccessTokenSilently();
 
-      const response = await fetch(`${apiOrigin}/topics`, {
+      const response = await fetch(`${apiOrigin}topics`, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Ocp-Apim-Subscription-Key" : "f011ed12660f4803aeeb94d63d23fb6e"
