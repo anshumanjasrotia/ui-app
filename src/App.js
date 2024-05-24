@@ -18,6 +18,7 @@ import "./App.css";
 import initFontAwesome from "./utils/initFontAwesome";
 import Payment from "./views/Payment";
 import Success from "./views/Success";
+import Report from "./views/Report";
 initFontAwesome();
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
             <Route path="/external-api" component={ExternalApi} />
             <Route path="/payment" component={Payment} />
             <Route path="/success" component={Success} />
+            <Route path="/report" component={Report} />
             
           </Switch>
         </Container>

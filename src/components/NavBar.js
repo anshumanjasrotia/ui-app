@@ -72,6 +72,16 @@ const NavBar = () => {
                       Payment
                     </NavLink>
                   </NavItem>
+                  <NavItem>
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/report"
+                      exact
+                      activeClassName="router-link-exact-active"
+                    >
+                      Reports
+                    </NavLink>
+                  </NavItem>
                 </>
               )}
             </Nav>
